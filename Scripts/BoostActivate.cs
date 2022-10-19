@@ -24,19 +24,15 @@ public class BoostActivate : MonoBehaviour
     
     public IEnumerator ActiveSpeedBoost(float activeTime, float speedCoefX, float speedCoefY)
     {
-        Debug.Log("Activated Speed");
         _player.ChangeSpeed(speedCoefX, speedCoefY);
         yield return new WaitForSeconds(activeTime);
         _player.ChangeSpeed(1f / speedCoefX, 1f / speedCoefY);
-        Debug.Log("Deactivated Speed");
     }
     
     public IEnumerator ActiveShotgunBoost(float activeTime)
     {
-        Debug.Log("Activated Shotgun");
         _player.ChangeShotgunActive(+1);
         yield return new WaitForSeconds(activeTime);
         _player.ChangeShotgunActive(-1);
-        Debug.Log("Deactivated Shotgun");
     }
 }

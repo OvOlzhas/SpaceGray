@@ -36,8 +36,8 @@ public class Bullet : MonoBehaviour
         }
         if (hitInfo.name == "Player" && !fromPlayer)
         {
-            Player enemy = hitInfo.GetComponent<Player>();
-            enemy.TakeDamage(damage);
+            Player player = hitInfo.GetComponent<Player>();
+            player.TakeDamage(damage);
             Destroy(gameObject);
         }
     }

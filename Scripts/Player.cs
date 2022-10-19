@@ -100,7 +100,6 @@ public class Player : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision with " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
@@ -120,7 +119,6 @@ public class Player : MonoBehaviour
     
     void Die()
     {
-        Debug.Log("Player Died Legally");
         SaveScore();
         Instantiate(explosionPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);

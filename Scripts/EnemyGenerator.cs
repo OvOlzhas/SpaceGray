@@ -43,6 +43,7 @@ public class EnemyGenerator : MonoBehaviour
             Random.Range(bounds.min.z, bounds.max.z)
             );
     }
+    
     void Spawn()
     {
         Instantiate(enemyPrefab, RandomPointInBox(), coll.transform.rotation);

@@ -27,11 +27,11 @@ public class Enemy : MonoBehaviour
     private IEnumerator _coroutine;
     void Start()
     {
+        _score = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreText>();
         rb.velocity = transform.up * -speed;
         health = maxHealth;
         _coroutine = Shooting(fireRate);
         StartCoroutine(_coroutine);
-        _score = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreText>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)

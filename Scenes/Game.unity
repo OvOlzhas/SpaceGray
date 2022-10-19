@@ -752,5 +752,13 @@ PrefabInstance:
       propertyPath: m_TagString
       value: DownBurder
       objectReference: {fileID: 0}
+    - target: {fileID: 8292434043676779059, guid: ec3fc3f42a0bb384dab46eb647ce2072, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4908562
+      objectReference: {fileID: 0}
+    - target: {fileID: 8292434043676779059, guid: ec3fc3f42a0bb384dab46eb647ce2072, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.24542809
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec3fc3f42a0bb384dab46eb647ce2072, type: 3}
