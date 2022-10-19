@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speedX: 8
-  speedY: 3
+  speedY: 4
   bulletPrefab: {fileID: 1271296325273593930, guid: 6ef5ee4527bf6fa4ebc7ad775e37e167, type: 3}
   firePoint: {fileID: 1151711699359325629}
   firePointLeft: {fileID: 1151711699700714910}

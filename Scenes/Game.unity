@@ -278,8 +278,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coll: {fileID: 1027472189}
   enemyPrefab: {fileID: 1628253607341321267, guid: 7348930cbc7a97d4cbfea7e461b54883, type: 3}
-  spawnRate: 1.9
+  spawnRate: 1.8
   complicationCoeff: 0.8
+  levelUpRate: 45
+  levelUpTime: 45
+  levelUpText: {fileID: 992592794972665188, guid: 7132e4c949f45cb49a9a5d3724e13112, type: 3}
 --- !u!4 &1027472191
 Transform:
   m_ObjectHideFlags: 0
